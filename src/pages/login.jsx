@@ -15,9 +15,9 @@ export default function SignIn() {
   return (
     <Box sx={{display:'flex', alignItems:'center',height: '100vh', width: '100%', overflow: 'hidden', backdropFilter:"blur(5px)", backgroundColor:"#E8E8E8" }}>
       <div className='loginPageContainer'>
-        <div className='imageLeft'>
+        {window.innerWidth > 600 && (<div className='imageLeft'>
           <img src="https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZSUyMGNvbW1lcmNlfGVufDB8fDB8fHww&w=1000&q=80" alt="" />
-        </div>
+        </div>)}
         <div className='loginRight'>
           <div className='loginRightWrapper'>
             <div className='loginRightWrapperUp'>

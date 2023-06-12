@@ -21,7 +21,7 @@ export default function LoginButton(props) {
     color="secondary" 
     onClick={props.click}>
 
-      <Box sx={{fontSize:'80%'}}>{props.name}</Box>
+      <Box sx={{fontSize:'70%'}}>{props.name}</Box>
 
     </Button>
   )
