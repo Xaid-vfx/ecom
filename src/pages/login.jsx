@@ -5,11 +5,19 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import './login.css';
 import LoginButton from '../components/buttons/LoginButton';
+import { useState } from 'react';
 
 export default function SignIn() {
 
+  const [login, setlogin] = useState('login')
   function handleClick() {
     console.log('click')
+  }
+  function handleClick2() {
+    setlogin('signup');
+  }
+  function handleClick3() {
+    setlogin('login');
   }
 
   return (
@@ -19,7 +27,7 @@ export default function SignIn() {
           <img src="https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZSUyMGNvbW1lcmNlfGVufDB8fDB8fHww&w=1000&q=80" alt="" />
         </div>)}
         <div className='loginRight'>
-          <div className='loginRightWrapper'>
+          {login == 'login' && <div className='loginRightWrapper'>
             <div className='loginRightWrapperUp'>
               <h2>Hi there</h2>
               <div className='inputBoxes'>
@@ -31,10 +39,27 @@ export default function SignIn() {
               </div>
             </div>
             <div className='loginRightWrapperDown'>
-              <small>Dont have an account? <a>Sign Up</a></small>
+              <small>Dont have an account? <a onClick={handleClick2}>Sign Up</a></small>
               
             </div>
-          </div>
+          </div>}
+          {login == 'signup' && <div className='loginRightWrapper'>
+            <div className='loginRightWrapperUp'>
+              <h2>Hi there</h2>
+              <div className='inputBoxes'>
+                <input type='text' placeholder='Email' />
+                <input type='text' placeholder='Password' />
+                <input type='text' placeholder='Confirm Password' />
+              </div>
+              <div className='loginBtn'>
+                <LoginButton hovercolor = "black" hoverborder="1px solid" hoverbg ='white' color= "white" border="1px solid" bg="black" height="75%"  name={'Sign Up'} click={handleClick} />
+              </div>
+            </div>
+            <div className='loginRightWrapperDown'>
+              <small>Already have an account? <a onClick={handleClick3}>Log In</a></small>
+              
+            </div>
+          </div>}
         </div>
       </div>
     </Box>
