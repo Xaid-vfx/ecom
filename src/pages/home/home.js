@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material-next'
 import "./home.css"
+import Card from '../../components/card/card'
 
 
 
@@ -18,8 +19,10 @@ const Home = () => {
     <Button variant='contained' color="primary"size="large" sx = {{backgroundColor:"black", color:"gray", fontWeight:"600", fontFamily:"Verdana, Geneva, Tahoma, sans-serif"}}>learn more</Button>
     </div>
     
+    
 
     </div>
+    <Card  />
     </section>
   )
 }
