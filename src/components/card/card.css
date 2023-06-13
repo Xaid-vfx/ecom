@@ -17,3 +17,15 @@
   width: 400px;
   height: 250px;
 }
+.card-stats{
+  display: flex;
+  flex-direction: column;
+}
+
+.pricetitle{
+  display: flex;
+  justify-content: space-between;
+}
+.carddesc{
+  text-align: left;
+}
