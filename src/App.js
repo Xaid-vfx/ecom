@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <p>this is our project</p>
+     
 
       <Router>
 

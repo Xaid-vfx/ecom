@@ -4,3 +4,28 @@
     
     
 }
+.multi-card
+{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.multi-card::-webkit-scrollbar
+{
+    display:none;
+}
+h2{
+    font-size: 50px;
+    color:blanchedalmond;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 270px;
+    padding-bottom: 80px;
+}
+p3
+{
+    padding-right: 250px;
+    padding-top: 45px;
+    color:rgb(rgb(52, 51, 51), green, blue);
+    font-size: 20px;
+    word-spacing: 1px;
+}
